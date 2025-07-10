@@ -1,5 +1,3 @@
-/* src/index.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +5,11 @@
 }
 
 html, body, #root {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  background: transparent; /* Let video show through */
+  background: transparent;
   color: white;
-}
-html, body {
   scroll-behavior: smooth;
-  height: 100%;
 }
-

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import profile from '../../assets/about_profile.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div id='about' className='about-container'>
       <div className='about-header'>
@@ -10,17 +16,16 @@ const About = () => {
       </div>
 
       <div className='about-content'>
-        <div className='about-image'>
+        <div className='about-image' data-aos="fade-right">
           <img src={profile} alt="Profile" />
         </div>
 
-        <div className='about-text'>
+        <div className='about-text' data-aos="fade-left">
           <p>
-            I am a dedicated Computer Science and Engineering student at CMR Institute of Technology (2022-2026), Specializing in Data Science.
-            As a passionate Computer Science graduate, I have a strong foundation in web development & programming. I enjoy building
-            interactive & responsive web applications using modern technologies like React JS, and I am also skilled in Data Structures through Java.
-            As a recent Computer Science graduate, I’m excited to apply my skills in programming languages like Java and Python to drive
-            innovation in the tech industry.
+            I am a dedicated Computer Science and Engineering student at CMR Institute of Technology (2022–2026), specializing in Data Science.
+            I have a solid foundation in web development and programming, with a passion for building interactive, responsive web applications using modern technologies like React JS.
+            I’m also proficient in Data Structures and Algorithms through Java, and continually strengthen my skills in Python and SQL.
+            As a recent Computer Science enthusiast, I’m excited to apply my technical knowledge and creativity to drive innovation in the tech industry.
           </p>
 
           <div className="about-skills">
@@ -49,7 +54,7 @@ const About = () => {
               </div>
             </div>
             <div className="skill-bar">
-              <span>Python </span>
+              <span>Python</span>
               <div className="bar">
                 <div className="progress" style={{ width: "70%" }}></div>
               </div>

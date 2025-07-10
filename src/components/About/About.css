@@ -22,8 +22,11 @@
   align-items: flex-start;
 }
 
+/* Image animation */
 .about-image {
-  margin-top: 2rem; /* ✅ Added to shift image down */
+  margin-top: 2rem;
+  animation: slideInLeft 1s ease-out forwards;
+  opacity: 0;
 }
 
 .about-image img {
@@ -33,13 +36,18 @@
   box-shadow: 0 4px 20px rgba(44, 44, 44, 0.1);
 }
 
+/* Text animation */
 .about-text {
   flex: 1;
   font-size: 1.1rem;
   max-width: 600px;
   margin-left: 4rem;
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
+/* Skills section */
 .about-skills {
   margin-top: 1.5rem;
 }
@@ -70,6 +78,7 @@
   transition: width 0.5s ease;
 }
 
+/* Achievements section */
 .about-achievements {
   margin-top: 2rem;
 }
@@ -90,8 +99,36 @@
   font-size: 1.05rem;
 }
 
+/* Responsive fix */
 @media (max-width: 768px) {
   .about-text {
     margin-left: 0;
   }
 }
+
+/* =========================== */
+/*        Animations           */
+/* =========================== */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ 
