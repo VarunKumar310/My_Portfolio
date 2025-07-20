@@ -39,7 +39,6 @@
 
 // export default Hero;
 
-
 import React from 'react';
 import './Hero.css';
 import profile from '../../assets/profile_img.jpg';
@@ -64,7 +63,12 @@ const Hero = () => {
         <a href="#contact" className="hero-connect">
           Connect with me
         </a>
-        <a className="hero-resume" href="/varun_resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          className="hero-resume"
+          href={`${import.meta.env.BASE_URL}varun_resume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           My Resume
         </a>
       </div>
