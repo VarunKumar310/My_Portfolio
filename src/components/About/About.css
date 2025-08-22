@@ -1,0 +1,134 @@
+.about-container {
+  background-color: transparent;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.about-header span {
+  color: #f81ce5;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Image animation */
+.about-image {
+  margin-top: 2rem;
+  animation: slideInLeft 1s ease-out forwards;
+  opacity: 0;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(44, 44, 44, 0.1);
+}
+
+/* Text animation */
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: 4rem;
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+/* Skills section */
+.about-skills {
+  margin-top: 1.5rem;
+}
+
+.skill-bar {
+  margin-bottom: 1.2rem;
+}
+
+.skill-bar span {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #f81ce5, #f9a825);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+/* Achievements section */
+.about-achievements {
+  margin-top: 2rem;
+}
+
+.about-achievements h3 {
+  font-size: 1.5rem;
+  color: #f81ce5;
+  margin-bottom: 1rem;
+}
+
+.about-achievements ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.about-achievements li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .about-text {
+    margin-left: 0;
+  }
+}
+
+/* =========================== */
+/*        Animations           */
+/* =========================== */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ 

@@ -1,0 +1,174 @@
+/* ======================== */
+/*        NAVBAR CSS       */
+/* ======================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 170px;
+}
+
+.navbar img {
+  width: 80px;
+  height: auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ======================== */
+/*        RESPONSIVE        */
+/* ======================== */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 50px;
+  }
+
+  .nav-menu {
+    gap: 40px;
+    font-size: 18px;
+  }
+
+  .nav-connect {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 20px 0;
+    gap: 20px;
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-connect {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .nav-menu li img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .nav-connect {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .nav-menu li img {
+    width: 30px;
+  }
+}
+
+/* Layout Fix */
+body {
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}

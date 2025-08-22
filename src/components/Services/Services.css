@@ -1,0 +1,86 @@
+.services {
+  padding: 4rem 2rem;
+  background-color: transparent; /* Fully transparent background */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.services-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.services-title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #f81ce5, #f9a825);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.services-title img {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 100px;
+  opacity: 0.1;
+}
+
+.service-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 1rem;
+}
+
+.service-card {
+  background-color: rgba(0, 0, 0, 0.3); /* Transparent dark card */
+  border: 2px solid rgba(255, 255, 255, 0.15); /* Subtle default border */
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(248, 28, 229, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #ff4d6d; /* Pink border */
+  box-shadow: 0 0 18px rgba(255, 77, 109, 0.6); /* Pink glow */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker hover background */
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(90deg, #f81ce5, #f9a825);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.service-card a {
+  color: #f81ce5;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.service-card a:hover {
+  color: #f9a825;
+}

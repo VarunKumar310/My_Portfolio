@@ -1,0 +1,61 @@
+.certifications {
+  padding: 4rem 8%;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.certifications h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #f81ce5, #f9a825);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cert-card {
+  background: rgba(0, 0, 0, 0.4); /* Transparent black */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Default subtle border */
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  width: 200px;   /* reduced slightly */
+  height: 240px;  /* reduced slightly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.cert-card:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+  transform: scale(1.05);
+  border-color: #ff4d6d; /* Pink outline */
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+}
+
+.cert-logo {
+  width: 80%;     /* smaller so border shows */
+  height: 65%;    /* reduced to leave breathing space */
+  object-fit: contain; 
+  margin-top: 15px;
+  background: white; /* Optional: white backdrop for logos */
+  border-radius: 8px;
+  padding: 5px;  /* spacing inside logo box */
+}
+
+.cert-card p {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent strip for text readability */
+  margin: 0;
+  text-align: center;
+}
