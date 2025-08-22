@@ -1,12 +1,45 @@
-# React + Vite
+# 🌐 Varun Kumar – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal **portfolio website**, built using **React + Vite** and deployed on **GitHub Pages**.  
+It showcases my projects, certifications, and skills in a clean and modern UI.  
 
-Currently, two official plugins are available:
+🔗 **Live Website:** [Varun Kumar – Portfolio](https://varunkumar310.github.io/My_Portfolio/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **React** (with Vite for fast development & build)  
+- 🎨 **CSS3** (custom responsive styling)  
+- 🖼️ **Assets** (images, logos, videos integrated)  
+- 📄 **gh-pages** (for deployment on GitHub Pages)  
+
+---
+
+## 📌 Features
+
+- ✅ Responsive design – works on mobile, tablet & desktop  
+- ✅ Navigation bar for smooth scrolling  
+- ✅ Projects section with **images & descriptions**  
+- ✅ Certifications section with **clickable PDF links**  
+- ✅ About Me & Contact section  
+- ✅ Resume download option  
+
+---
+
+## 🛠️ Installation & Setup
+
+If you want to run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/VarunKumar310/My_Portfolio.git
+
+# Go into the project folder
+cd My_Portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
